@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    Are you sure?
+{% endblock title %}
+    
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="m-5">
+                    <form action="endroom" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="roomname" class="form-control" placeholder="Enter room name" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="roompass" class="form-control" placeholder="Enter password to delete!" required>
+                        </div>
+                        <input type="submit" class="btn btn-danger" value="Delete Room">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+    
